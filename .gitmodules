@@ -1,0 +1,6 @@
+[submodule "git"]
+	path = git
+	url = git@github.com:kaleb/config-git
+[submodule "vim"]
+	path = vim
+	url = git@github.com:kaleb/vim-files
