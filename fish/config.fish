@@ -6,6 +6,7 @@ if not set -q XDG_CACHE_HOME
 	mkdir -p $XDG_CACHE_HOME
 end
 if not set -q VIMINIT
+	mkdir -p $XDG_CACHE_HOME/vim
 	set -xg VIMINIT 'let $MYVIMRC="$XDG_CONFIG_HOME/vim/xdg.vim" | source $MYVIMRC'
 end
 if not set -q LESSHISTFILE
