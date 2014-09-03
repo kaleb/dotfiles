@@ -10,6 +10,7 @@
 	lg = log --graph --decorate --abbrev-commit --date=relative --pretty=medium
 	dt = difftool
 	sui = submodule update --init
+	exec = "!exec "
 [push]
 	default = simple
 [color]
