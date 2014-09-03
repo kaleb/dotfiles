@@ -11,6 +11,7 @@
 	dt = difftool
 	sui = submodule update --init
 	exec = "!exec "
+	yolo = !git commit -am 'DEAL WITH IT' && git push -f origin master
 [push]
 	default = simple
 [color]
