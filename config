@@ -7,7 +7,7 @@
 	co = checkout
 	st = status -sb
 	ls = ls-files -v
-	lg = log --graph --decorate --abbrev-commit --date=relative --pretty=medium
+	lg = log --graph --decorate --abbrev-commit --date=relative
 	dt = difftool
 	sui = submodule update --init
 	exec = "!exec "
