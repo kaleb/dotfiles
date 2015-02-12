@@ -1,3 +1,7 @@
 set -g prefix C-@
 
+
+set -g status-keys vi
+setw -g mode-keys vi
+
 if-shell "test $COLORTERM = gnome-terminal" "set -g default-terminal gnome-256color"
