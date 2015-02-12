@@ -16,3 +16,12 @@ if not set -q LESSHISTFILE
 	mkdir -p $less_cache_dir
 	set -xg LESSHISTFILE $less_cache_dir/history
 end
+
+if [ $COLORTERM = gnome-terminal ]
+	set -x TERM (switch $TERM
+		case xterm
+			echo gnome-256color
+		case '*'
+			echo $TERM
+	end)
+end

@@ -1,1 +1,3 @@
 set -g prefix C-@
+
+if-shell "test $COLORTERM = gnome-terminal" "set -g default-terminal gnome-256color"
