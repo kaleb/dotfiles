@@ -18,10 +18,11 @@ if not set -q LESSHISTFILE
 end
 
 if [ $COLORTERM = gnome-terminal ]
-	set -x TERM (switch $TERM
-		case xterm
-			echo gnome-256color
-		case '*'
-			echo $TERM
-	end)
+	if [ $TERM = xterm ]
+		if [ (tput -T gnome-256color colors 2>/dev/null) -eq 256 ]
+			set -x TERM gnome-256color
+		else if [ (tput -T xterm-256color colors 2>/dev/null) -eq 256 ]
+			set -x TERM xterm-256color
+		end
+	end
 end
