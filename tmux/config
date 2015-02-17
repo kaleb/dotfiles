@@ -8,5 +8,4 @@ setw -g mode-mouse on
 set -g status-keys vi
 setw -g mode-keys vi
 
-if-shell "test $TERM = xterm-256color" "set -g default-terminal xterm-256color"
-if-shell "test $TERM = gnome-256color" "set -g default-terminal gnome-256color"
+if-shell "echo $TERM | grep 256color > /dev/null 2>&1" "set -g default-terminal screen-256color"
