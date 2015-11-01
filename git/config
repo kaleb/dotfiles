@@ -1,0 +1,28 @@
+[user]
+	email = kaleb@horns.by
+	name = Kaleb Hornsby
+[alias]
+	br = branch
+	ci = commit -v
+	co = checkout
+	st = status -sb
+	ls = ls-files -v
+	lg = log --graph --decorate --abbrev-commit --date=relative --pretty=medium
+	dt = difftool
+	sui = submodule update --init
+[push]
+	default = simple
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = auto
+[merge]
+	tool = vimdiff
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[core]
+	editor = vim
