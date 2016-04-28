@@ -2,6 +2,8 @@ set -g prefix C-@
 
 set-option -g mouse on
 
+set-option set-titles on
+
 set -g status-keys vi
 setw -g mode-keys vi
 
