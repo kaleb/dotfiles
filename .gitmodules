@@ -1,3 +1,6 @@
 [submodule "vim"]
 	path = vim
 	url = git@github.com:kaleb/vim-files
+[submodule "fish/modules/django_completions"]
+	path = fish/modules/django_completions
+	url = git@github.com:Duncaen/fish-django-completions.git

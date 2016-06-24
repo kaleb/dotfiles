@@ -26,3 +26,9 @@ if [ $COLORTERM = gnome-terminal ]
 		end
 	end
 end
+
+if functions -q __fish_complete_django
+	__fish_complete_django django-admin.py
+	__fish_complete_django manage.py
+	__fish_complete_django django-admin
+end
