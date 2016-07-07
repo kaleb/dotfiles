@@ -4,3 +4,6 @@
 [submodule "fish/modules/django_completions"]
 	path = fish/modules/django_completions
 	url = git@github.com:Duncaen/fish-django-completions.git
+[submodule "fish/modules/docker-completion"]
+	path = fish/modules/docker-completion
+	url = git@github.com:barnybug/docker-fish-completion.git
