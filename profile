@@ -24,6 +24,7 @@ fi
 export DOCKER_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}"/docker
 export HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}"/bash/history
 export LESSHISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}"/less/history
+export VIMINIT="source ${XDG_CONFIG_HOME:-$HOME/.config/vim/xdg.vim}"
 
 # TODO: this needs an appropriate default
 export TMUX_TMPDIR="$XDG_RUNTIME_DIR"/tmux
