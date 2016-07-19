@@ -31,3 +31,9 @@ export TMUX_TMPDIR="$XDG_RUNTIME_DIR"/tmux
 
 mkdir -p $(dirname $HISTFILE)
 mkdir -p $(dirname $LESSHISTFILE)
+# Ubuntu make installation of Nodejs Lang
+PATH=/home/khornsby/.local/share/umake/nodejs/nodejs-lang/bin:/home/khornsby/.node_modules/bin:$PATH
+
+# Ubuntu make installation of Ubuntu Make binary symlink
+PATH=/home/khornsby/.local/share/umake/bin:$PATH
+
