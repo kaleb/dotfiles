@@ -10,7 +10,7 @@
 #umask 022
 
 # if running bash(1)
-if [ -n "$BASH_VERSION" ]; then
+if [ -n "$BASH_VERSION" ] ; then
 	. ${XDG_CONFIG_HOME:-$HOME/.config}/bash/login.bash
 fi
 
@@ -19,6 +19,16 @@ fi
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/.local/bin" ] ; then
 	PATH="$HOME/.local/bin:$PATH"
+fi
+
+# Ubuntu make installation of Nodejs Lang
+if [ -d "$HOME/.local/share/umake/nodejs/nodejs-lang/bin" ] ; then
+	PATH=$HOME/.local/share/umake/nodejs/nodejs-lang/bin:/home/khornsby/.node_modules/bin:$PATH
+fi
+
+# Ubuntu make installation of Ubuntu Make binary symlink
+if [ -d "$HOME/.local/share/umake/nodejs/nodejs-lang/bin" ] ; then
+	PATH=$HOME/.local/share/umake/bin:$PATH
 fi
 
 export DOCKER_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}"/docker
@@ -31,9 +41,3 @@ export TMUX_TMPDIR="$XDG_RUNTIME_DIR"/tmux
 
 mkdir -p $(dirname $HISTFILE)
 mkdir -p $(dirname $LESSHISTFILE)
-# Ubuntu make installation of Nodejs Lang
-PATH=/home/khornsby/.local/share/umake/nodejs/nodejs-lang/bin:/home/khornsby/.node_modules/bin:$PATH
-
-# Ubuntu make installation of Ubuntu Make binary symlink
-PATH=/home/khornsby/.local/share/umake/bin:$PATH
-
