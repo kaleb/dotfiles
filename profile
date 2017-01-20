@@ -35,6 +35,7 @@ export DOCKER_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}"/docker
 export HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}"/bash/history
 export LESSHISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}"/less/history
 export VIMINIT="source ${XDG_CONFIG_HOME:-$HOME/.config/vim/xdg.vim}"
+export NODE_PATH="$HOME/.local/lib/node_modules"
 export npm_config_userconfig="${XDG_CONFIG_HOME:-$HOME/.config}"/npm/npmrc
 export npm_config_cache="${XDG_CACHE_HOME:-$HOME/.cache}"/npm
 
