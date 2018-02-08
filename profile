@@ -31,6 +31,7 @@ if [ -d "$HOME/.local/share/umake/nodejs/nodejs-lang/bin" ] ; then
 	PATH=$HOME/.local/share/umake/bin:$PATH
 fi
 
+export PATH
 export DOCKER_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}"/docker
 export HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}"/bash/history
 export LESSHISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}"/less/history
