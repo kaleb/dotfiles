@@ -7,3 +7,6 @@
 [submodule "fish/modules/docker-completion"]
 	path = fish/modules/docker-completion
 	url = git@github.com:barnybug/docker-fish-completion.git
+[submodule "vim/pack/tpope/start/sensible"]
+	path = vim/pack/tpope/start/sensible
+	url = ../../tpope/vim-sensible.git

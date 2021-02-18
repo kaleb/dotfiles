@@ -2,11 +2,7 @@
 
 let $MYVIMRC = expand("<sfile>")
 
-runtime bundle/pathogen/autoload/pathogen.vim
-if exists("g:loaded_pathogen")
-  exec pathogen#infect()
-  Helptags
-endif
+helptags ALL
 
 " Options: --------------------------------------------------------------------
 
