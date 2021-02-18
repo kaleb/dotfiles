@@ -13,11 +13,6 @@
 	url = git://github.com/tpope/vim-speeddating.git
 	fetchRecurseSubmodules = true
 	ignore = untracked
-[submodule "bundle/surround"]
-	path = bundle/surround
-	url = git://github.com/tpope/vim-surround.git
-	fetchRecurseSubmodules = true
-	ignore = untracked
 [submodule "bundle/unimpaired"]
 	path = bundle/unimpaired
 	url = git://github.com/tpope/vim-unimpaired.git
