@@ -1,0 +1,68 @@
+---
+- hosts: localhost
+  connection: local
+  tasks:
+
+  - name: Link main profile
+    file:
+      src: ~/.config/profile
+      dest: ~/.profile
+      state: link
+      force: yes
+
+  - name: Install fish
+    become: yes
+    package:
+      name: fish
+      state: present
+    tags:
+    - package
+    - workstation
+    - fish-shell
+
+  - name: Set fish as default shell
+    user:
+      name: "{{ ansible_user_id }}"
+      shell: /usr/bin/fish
+    tags:
+    - configuration
+    - workstation
+    - fish-shell
+
+  - name: Install Vim
+    become: yes
+    package:
+      name: vim-gtk3
+      state: present
+    tags:
+    - package
+    - workstation
+    - vim
+
+  - name: Install Vim HTML docs
+    become: yes
+    package:
+      name: vim-doc
+      state: present
+    tags:
+    - package
+    - documentation
+    - vim
+
+  - name: Install GNOME Desktop Environment Core Applications
+    become: yes
+    package:
+      name: gnome-core
+      state: present
+    tags:
+    - package
+    - workstation
+
+  - name: Install GNOME Devhelp
+    become: yes
+    package:
+      name: devhelp
+      state: present
+    tags:
+    - package
+    - workstation

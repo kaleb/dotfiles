@@ -8,6 +8,7 @@
 !/bin/
 !/fish/
 !/git/
+!/local.yml
 !/npm/
 !/profile
 !/tmux/
