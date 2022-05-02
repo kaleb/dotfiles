@@ -6,8 +6,10 @@
 !/X/xsessionrc
 !/bash/
 !/bin/
+!/environment.d/
 !/fish/
 !/git/
+!/local.yml
 !/npm/
 !/profile
 !/tmux/

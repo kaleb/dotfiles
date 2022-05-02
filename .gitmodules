@@ -1,9 +1,12 @@
-[submodule "vim"]
-	path = vim
-	url = git@github.com:kaleb/vim-files
 [submodule "fish/modules/django_completions"]
 	path = fish/modules/django_completions
 	url = git@github.com:Duncaen/fish-django-completions.git
 [submodule "fish/modules/docker-completion"]
 	path = fish/modules/docker-completion
 	url = git@github.com:barnybug/docker-fish-completion.git
+[submodule "vim/pack/tpope/start/sensible"]
+	path = vim/pack/tpope/start/sensible
+	url = ../../tpope/vim-sensible.git
+[submodule "vim/pack/tpope/start/surround"]
+	path = vim/pack/tpope/start/surround
+	url = ../../tpope/vim-surround.git
